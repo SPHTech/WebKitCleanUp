@@ -1,0 +1,6 @@
+framework module WebKitCleanUp {
+  umbrella header "WebKitCleanUp-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - WebKitCleanUp (0.0.1)
+
+DEPENDENCIES:
+  - WebKitCleanUp (from `../`)
+
+EXTERNAL SOURCES:
+  WebKitCleanUp:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WebKitCleanUp: 002e4d4a9bc1e6b1f174c6af616dac828066dd82
+
+PODFILE CHECKSUM: e612d4a5f7bb5bf4b5cf8ca29a1a7d99d115db39
+
+COCOAPODS: 1.10.0

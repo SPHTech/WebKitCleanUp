@@ -1,0 +1,8 @@
+parent_config: https://raw.githubusercontent.com/SPHTech/SPHSwiftlint/master/.swiftlint.yml
+
+included:
+- SPHUIKit-Example
+- ../SPHUIKit
+
+excluded:
+- Pods
