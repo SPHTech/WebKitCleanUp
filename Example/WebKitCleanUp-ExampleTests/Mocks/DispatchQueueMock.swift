@@ -11,13 +11,7 @@ import WebKitCleanUp
 public class DispatchQueueMock: DispatchQueueType {
   public init() {}
   
-  public func asyncAfter(deadline: DispatchTime, work: @escaping () -> Void) {
-    work()
-  }
-
   public func async(work: @escaping () -> Void) {
     work()
   }
-
-  public func asyncAfter(deadline: DispatchTime, executeItem workItem: DispatchWorkItem) {}
 }

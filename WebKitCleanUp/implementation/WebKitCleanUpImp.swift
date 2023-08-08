@@ -7,15 +7,13 @@
 
 import Foundation
 import WebKit
-#if canImport(BackgroundTasks)
-import BackgroundTasks
-#endif
 
 public struct WebKitCleanUpImp: WebKitCleanUp {
     public let webKitDiskDataStore: WebKitDiskDataStore
     public let webKitCleanUpStatusMemory: WebKitCleanUpStatusMemory
     private let dispatchQueue: DispatchQueueType
     private let webKitCleanUpConfig: WebKitCleanUpConfig
+    private let fileSizeUtils: FileSizeUtils
     
     private enum Constant {
         static let webKitSubDirectory = "/WebKit"
@@ -24,15 +22,16 @@ public struct WebKitCleanUpImp: WebKitCleanUp {
     public init(webKitCleanUpConfig: WebKitCleanUpConfig,
                 dispatchQueue: DispatchQueueType = DispatchQueue.main,
                 webKitDiskDataStore: WebKitDiskDataStore = WKWebsiteDataStore.default(),
-                webKitCleanUpStatusMemory: WebKitCleanUpStatusMemory = DefaultWebKitCleanUpStatusMemory()) {
+                webKitCleanUpStatusMemory: WebKitCleanUpStatusMemory = DefaultWebKitCleanUpStatusMemory(),
+                fileSizeUtils: FileSizeUtils = FileSizeUtilsImp.shared) {
         self.webKitCleanUpConfig = webKitCleanUpConfig
         self.dispatchQueue = dispatchQueue
         self.webKitDiskDataStore = webKitDiskDataStore
         self.webKitCleanUpStatusMemory = webKitCleanUpStatusMemory
+        self.fileSizeUtils = fileSizeUtils
     }
     
     public func webKitDidCleanUpCache(cacheTypes: [WebKitCacheType],
-                                      performMode: WebKitPerformMode,
                                       completionHandler: @escaping () -> Void) {
         var dataTypes: [String] = []
         for type in cacheTypes {
@@ -63,4 +62,12 @@ public struct WebKitCleanUpImp: WebKitCleanUp {
         let numberOfDays = Date().days(before: lastSuccessDate)
         return numberOfDays >= webKitCleanUpConfig.cleanUpDuration
     }
+    
+    /// Calculated webkit size
+     public func getWebKitSize() -> Int {
+       guard let cacheDirectory = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true).first else { return 0 }
+       let webKitPath = cacheDirectory + Constant.webKitSubDirectory
+       let files = self.fileSizeUtils.allFileSizes(at: URL(fileURLWithPath: webKitPath))
+       return files.reduce(0) { (result, fileSizeInfo) -> Int in return result + fileSizeInfo.size }
+     }
 }

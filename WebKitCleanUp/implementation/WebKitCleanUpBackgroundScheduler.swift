@@ -58,7 +58,6 @@ public struct WebKitCleanUpBackgroundScheduler {
     private func executeWebKitCleanUp(task: BGProcessingTask, cacheTypes: [WebKitCacheType]) {
         let workItem = DispatchWorkItem(block: {
             webKitCleanUp.webKitDidCleanUpCache(cacheTypes: cacheTypes,
-                                                performMode: .background,
                                                 completionHandler: {
                 #if DEBUG || QA
                 triggerNotificationWith(title: "[Debug and QA only alert] Webkit Clean up",

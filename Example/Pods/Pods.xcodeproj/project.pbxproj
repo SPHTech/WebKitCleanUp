@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CA2C9D82A821E390084D858 /* FileSizeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA2C9D72A821E390084D858 /* FileSizeUtils.swift */; };
 		2B9AEE7081B44C0286DB8F3D2F086467 /* WebKitCleanUpImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF11BCCA8B1E301662CE062B1500E72 /* WebKitCleanUpImp.swift */; };
 		355A7A730215C3133B992F45F6DD998A /* WebKitCleanUp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2127D789671A87B33873EFB4881A07 /* WebKitCleanUp-dummy.m */; };
 		5717A38991E15139C63B3FF5AD838F1A /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651CCB5D327B33B73DC5E3394C7FB826 /* Date+Extensions.swift */; };
@@ -49,36 +50,37 @@
 		0E1B1B526E8C7AD01EA26E591A94D3D9 /* Pods-WebKitCleanUp-ExampleTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WebKitCleanUp-ExampleTests-Info.plist"; sourceTree = "<group>"; };
 		10CEB84979A059F243E402BA0E28ECD4 /* WebKitCleanUp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WebKitCleanUp-Info.plist"; sourceTree = "<group>"; };
 		15C3AF785E274D5E21B346706BD964CC /* WebKitCleanUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WebKitCleanUp.release.xcconfig; sourceTree = "<group>"; };
+		1CA2C9D72A821E390084D858 /* FileSizeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSizeUtils.swift; sourceTree = "<group>"; };
 		2367AE5328C397EB4907AFB20C4E0311 /* Pods-WebKitCleanUp-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WebKitCleanUp-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3754AE639FE59EFD733EE9B806149CD6 /* WebKitDiskDataStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WebKitDiskDataStore.swift; sourceTree = "<group>"; };
 		3782FBA787C35C37A5AC75EDA43C820E /* Pods-WebKitCleanUp-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WebKitCleanUp-Example.release.xcconfig"; sourceTree = "<group>"; };
 		3789EC7AE21C3F1F6DE429D9FE2E7CD5 /* WebKitCleanUp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WebKitCleanUp.modulemap; sourceTree = "<group>"; };
 		3A31781845146465CD2760CC89D255F4 /* Pods-WebKitCleanUp-ExampleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WebKitCleanUp-ExampleTests-umbrella.h"; sourceTree = "<group>"; };
-		3DB4DECDE3A7FD2B6B53ABE8536034F4 /* Pods_WebKitCleanUp_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WebKitCleanUp_Example.framework; path = "Pods-WebKitCleanUp-Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB4DECDE3A7FD2B6B53ABE8536034F4 /* Pods_WebKitCleanUp_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebKitCleanUp_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B98DA93C4D858A3B01BBA7727298A5A /* Pods-WebKitCleanUp-ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WebKitCleanUp-ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
-		5DBE6E4D4CB4A6ECD1C64F370BDE553A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		5DBE6E4D4CB4A6ECD1C64F370BDE553A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		651CCB5D327B33B73DC5E3394C7FB826 /* Date+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		69BEA7DB1288C4D92BF575A0E87D6E1A /* WebKitCleanUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WebKitCleanUp.debug.xcconfig; sourceTree = "<group>"; };
 		6BD315A8D9434B41A60A65B603C7AE36 /* WebKitCleanUp-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WebKitCleanUp-prefix.pch"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		75E4C0C144EDAC01A1CE8D3818961816 /* Pods-WebKitCleanUp-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WebKitCleanUp-Example.modulemap"; sourceTree = "<group>"; };
 		7FF64C37C9A2F1401BEFAD7B60E56C6B /* Pods-WebKitCleanUp-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WebKitCleanUp-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		83AC0B97F32EF0786116D8DD41D2AFD0 /* WebKitCleanUp.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WebKitCleanUp.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		8843166EE1E3580DDE47C33F9F0279C6 /* WebKitCleanUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WebKitCleanUp.framework; path = WebKitCleanUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83AC0B97F32EF0786116D8DD41D2AFD0 /* WebKitCleanUp.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = WebKitCleanUp.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8843166EE1E3580DDE47C33F9F0279C6 /* WebKitCleanUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebKitCleanUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		888F1117189EB64FD9D46E9F2C6B5A2F /* Pods-WebKitCleanUp-ExampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WebKitCleanUp-ExampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		8B6232AF1EA8A6128429BEB36AD0F3A5 /* Pods-WebKitCleanUp-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WebKitCleanUp-Example-dummy.m"; sourceTree = "<group>"; };
 		8C4D47071D10211E03F3B895A8C13E18 /* WebKitCleanUpStatusMemory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WebKitCleanUpStatusMemory.swift; sourceTree = "<group>"; };
 		8FE013433C010269840C5D8731A31BF3 /* Pods-WebKitCleanUp-Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WebKitCleanUp-Example-Info.plist"; sourceTree = "<group>"; };
 		903A7439F0396DFEA699B73F39DC05C2 /* WebKitCleanUp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WebKitCleanUp-umbrella.h"; sourceTree = "<group>"; };
 		9833F03D2E57490DD3A0DBD0F235CD86 /* Pods-WebKitCleanUp-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WebKitCleanUp-Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A1A1F769AA3DAFB213D92F3CE4A18175 /* WebKitCleanUpConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WebKitCleanUpConfig.swift; sourceTree = "<group>"; };
 		A3FE33B61785D24922A65DD589AADF34 /* WebKitCleanUpForegroundScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WebKitCleanUpForegroundScheduler.swift; sourceTree = "<group>"; };
 		AB0FDE4D3F8E865B13C91C2FB08C5AEF /* Pods-WebKitCleanUp-ExampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WebKitCleanUp-ExampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AB6678612D1F4524C4CD9B36ED847A7D /* WebKitCleanUpBackgroundScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WebKitCleanUpBackgroundScheduler.swift; sourceTree = "<group>"; };
 		AE8215A474255200323BB3ADE2AA1DF9 /* Pods-WebKitCleanUp-ExampleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WebKitCleanUp-ExampleTests.modulemap"; sourceTree = "<group>"; };
-		B42D6A1CAAB5A488E9EC3BC2450451F5 /* Pods_WebKitCleanUp_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WebKitCleanUp_ExampleTests.framework; path = "Pods-WebKitCleanUp-ExampleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9FD8233CF42A0375A4DC16689CB9797 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B42D6A1CAAB5A488E9EC3BC2450451F5 /* Pods_WebKitCleanUp_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebKitCleanUp_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9FD8233CF42A0375A4DC16689CB9797 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BAF11BCCA8B1E301662CE062B1500E72 /* WebKitCleanUpImp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WebKitCleanUpImp.swift; sourceTree = "<group>"; };
 		BD2127D789671A87B33873EFB4881A07 /* WebKitCleanUp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WebKitCleanUp-dummy.m"; sourceTree = "<group>"; };
 		C3CF4BF149EC6F4E89A354E4E28FE43D /* Pods-WebKitCleanUp-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WebKitCleanUp-Example-umbrella.h"; sourceTree = "<group>"; };
@@ -232,10 +234,11 @@
 				D79997EF47B8444917E5FAC48537B7D4 /* DispatchQueueType.swift */,
 				D883D55E2A75ABCD20DDD1AE9A58AE52 /* UserDefaultsSuite.swift */,
 				AB6678612D1F4524C4CD9B36ED847A7D /* WebKitCleanUpBackgroundScheduler.swift */,
-				A1A1F769AA3DAFB213D92F3CE4A18175 /* WebKitCleanUpConfig.swift */,
 				A3FE33B61785D24922A65DD589AADF34 /* WebKitCleanUpForegroundScheduler.swift */,
+				A1A1F769AA3DAFB213D92F3CE4A18175 /* WebKitCleanUpConfig.swift */,
 				BAF11BCCA8B1E301662CE062B1500E72 /* WebKitCleanUpImp.swift */,
 				8C4D47071D10211E03F3B895A8C13E18 /* WebKitCleanUpStatusMemory.swift */,
+				1CA2C9D72A821E390084D858 /* FileSizeUtils.swift */,
 			);
 			name = implementation;
 			path = WebKitCleanUp/implementation;
@@ -420,6 +423,7 @@
 				FE9CBF558E97B343D8F9BAE1EA005CFB /* WebKitCleanUpForegroundScheduler.swift in Sources */,
 				2B9AEE7081B44C0286DB8F3D2F086467 /* WebKitCleanUpImp.swift in Sources */,
 				BA18C0A7C804DD69A2613863ACC73023 /* WebKitCleanUpStatusMemory.swift in Sources */,
+				1CA2C9D82A821E390084D858 /* FileSizeUtils.swift in Sources */,
 				C9980634C655C54C2CB8E8088981E84A /* WebKitDiskDataStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

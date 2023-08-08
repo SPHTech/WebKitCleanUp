@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  WebKitCleanUp.swift
 //  WebKitCleanUp
 //
 //  Created by Hoang Nguyen on 8/8/23.
@@ -20,12 +20,6 @@ public enum WebKitCacheType {
     case memory
 }
 
-// MARK: WebKitPerformMode
-public enum WebKitPerformMode: String {
-    case background
-    case foreground
-}
-
 // MARK: WebKitCleanUp
 public protocol WebKitCleanUp {
     
@@ -37,24 +31,11 @@ public protocol WebKitCleanUp {
     /// Store the clean up result for webkit. This storage will be spared from being cleaned up.
     var webKitCleanUpStatusMemory: WebKitCleanUpStatusMemory { get }
     
-    func webKitDidCleanUpCache(cacheTypes: [WebKitCacheType],
-                               performMode: WebKitPerformMode,
-                               completionHandler: @escaping () -> Void)
+    /// Executed clean up
+    func webKitDidCleanUpCache(cacheTypes: [WebKitCacheType], completionHandler: @escaping () -> Void)
+    
+    /// Get webkit size before and atfter clean up to verify
+    func getWebKitSize() -> Int
 }
-
-#if TESTING
-extension WebKitCacheType: Equatable {
-    public static func ==(lhs: WebKitCacheType, rhs: WebKitCacheType) -> Bool {
-        switch (lhs, rhs) {
-        case (.fetch, .fetch),
-            (.disk, .disk),
-            (.memory, .memory):
-            return true
-        default:
-            return false
-        }
-    }
-}
-#endif
 
 

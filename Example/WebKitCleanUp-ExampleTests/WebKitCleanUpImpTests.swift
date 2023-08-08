@@ -61,7 +61,7 @@ final class WebKitCleanUpImpTests: XCTestCase {
                                    webKitDiskDataStore: webKitDiskDataStoreMock,
                                    webKitCleanUpStatusMemory: webKitCleanUpStatusMemoryMock)
         // when
-        sut.webKitDidCleanUpCache(cacheTypes: [.disk], performMode: .background) {
+        sut.webKitDidCleanUpCache(cacheTypes: [.disk]) {
             
             //then
             XCTAssertNotNil(self.webKitCleanUpStatusMemoryMock.lastSuccessDate)

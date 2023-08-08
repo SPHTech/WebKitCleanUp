@@ -30,7 +30,6 @@ public struct WebKitCleanUpForegroundScheduler {
   public func executeWebKitCleanUp(cacheTypes: [WebKitCacheType]) {
     dispatchQueue.async {
       webKitCleanUp.webKitDidCleanUpCache(cacheTypes: cacheTypes,
-                                          performMode: .foreground,
                                           completionHandler: {
           // TODO: Trigger Analystic event when clean up finish
       })
