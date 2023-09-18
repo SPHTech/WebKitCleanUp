@@ -1,6 +1,0 @@
-framework module Pods_WebKitCleanUp_ExampleTests {
-  umbrella header "Pods-WebKitCleanUp-ExampleTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

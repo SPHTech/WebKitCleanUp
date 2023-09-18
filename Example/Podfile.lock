@@ -1,16 +1,16 @@
 PODS:
-  - WebKitCleanUp (0.0.1)
+  - TestUtils (0.0.1)
 
 DEPENDENCIES:
-  - WebKitCleanUp (from `../`)
+  - TestUtils (from `../`)
 
 EXTERNAL SOURCES:
-  WebKitCleanUp:
+  TestUtils:
     :path: "../"
 
 SPEC CHECKSUMS:
-  WebKitCleanUp: 002e4d4a9bc1e6b1f174c6af616dac828066dd82
+  TestUtils: 8b2f11518a91176102346e9ab643f522793d4e87
 
-PODFILE CHECKSUM: e612d4a5f7bb5bf4b5cf8ca29a1a7d99d115db39
+PODFILE CHECKSUM: 56fe63b20d67e8cb4bfe7fd1cce59aff81dc5c73
 
 COCOAPODS: 1.10.0

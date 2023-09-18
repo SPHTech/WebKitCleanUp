@@ -4,11 +4,9 @@ platform :ios, '12.0'
 
 use_frameworks!
 
-target 'WebKitCleanUp-Example' do
-  pod 'WebKitCleanUp', :path => '../'
+target 'TestUtilsExample' do
 end
 
-target 'WebKitCleanUp-ExampleTests' do
-  inherit! :search_paths
-  pod 'WebKitCleanUp', :path => '../'
+target 'TestUtilsExampleTests' do
+  pod 'TestUtils', :path => '../'
 end

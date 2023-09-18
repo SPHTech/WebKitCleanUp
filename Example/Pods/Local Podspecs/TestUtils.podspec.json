@@ -1,0 +1,30 @@
+{
+  "name": "TestUtils",
+  "version": "0.0.1",
+  "summary": "TestUtils module",
+  "description": "A module to list down unit test common functions.",
+  "homepage": "https://github.com/SPHTech/TestUtils",
+  "license": {
+    "type": "MIT",
+    "text": "Copyright (c) 2023 SPHTech"
+  },
+  "authors": {
+    "hoang nguyen": "hoangnguyen@sph.com.sg"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "source": {
+    "git": "git@github.com:SPHTech/TestUtils.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "TestUtils/**/*.{swift}",
+  "swift_versions": "5.0",
+  "requires_arc": true,
+  "static_framework": true,
+  "frameworks": [
+    "Foundation",
+    "XCTest"
+  ],
+  "swift_version": "5.0"
+}

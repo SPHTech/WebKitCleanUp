@@ -1,0 +1,6 @@
+framework module TestUtils {
+  umbrella header "TestUtils-umbrella.h"
+
+  export *
+  module * { export * }
+}
